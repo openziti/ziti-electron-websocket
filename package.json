@@ -1,0 +1,73 @@
+{
+  "name": "ziti-electron-websocket",
+  "version": "0.1.0",
+  "description": "A module that intercepts WebSocket's in an Electron renderer process and routes all bi-directional traffic over a Ziti network",
+  "keywords": [
+    "Ziti",
+    "nodejs",
+    "electron",
+    "HyBi",
+    "RFC-6455",
+    "WebSocket",
+    "WebSockets",
+    "real-time"
+  ],
+  "homepage": "https://github.com/netfoundry/ziti-electron-websocket",
+  "bugs": "https://github.com/netfoundry/ziti-electron-websocket/issues",
+  "repository": "https://github.com/netfoundry/ziti-electron-websocket",
+  "author": {
+    "name": "NetFoundry",
+    "url": "http://netfoundry.io"
+  },
+  "license": "Apache-2.0",
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=11.0.0"
+  },
+  "files": [
+    "browser.js",
+    "index.js",
+    "lib/*.js"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "lint": "eslint --ignore-path .gitignore . && prettier --check --ignore-path .gitignore \"**/*.{json,md,yaml,yml}\""
+   },
+  "peerDependencies": {
+    "bufferutil": "^4.0.1",
+    "utf-8-validate": "^5.0.2"
+  },
+  "peerDependenciesMeta": {
+    "bufferutil": {
+      "optional": true
+    },
+    "utf-8-validate": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "benchmark": "^2.1.4",
+    "bufferutil": "^4.0.1",
+    "coveralls": "^3.0.3",
+    "eslint": "^6.0.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "mocha": "^7.0.0",
+    "nyc": "^15.0.0",
+    "prettier": "^1.17.0",
+    "utf-8-validate": "^5.0.2"
+  },
+  "dependencies": {
+    "async-mutex": "^0.1.4",
+    "cache-manager": "^2.11.1",
+    "electron": "^5.0.11",
+    "electron-log": "^4.1.1",
+    "ziti-sdk-nodejs": "0.1.24"
+  }
+}
