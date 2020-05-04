@@ -38,7 +38,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\"",
     "lint": "eslint --ignore-path .gitignore . && prettier --check --ignore-path .gitignore \"**/*.{json,md,yaml,yml}\""
-   },
+  },
   "peerDependencies": {
     "bufferutil": "^4.0.1",
     "utf-8-validate": "^5.0.2"
