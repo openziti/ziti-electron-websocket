@@ -1,6 +1,6 @@
 {
   "name": "ziti-electron-websocket",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "A module that intercepts WebSocket's in an Electron renderer process and routes all bi-directional traffic over a Ziti network",
   "keywords": [
     "Ziti",
@@ -69,6 +69,6 @@
     "electron": "^5.0.11",
     "electron-log": "^4.1.1",
     "uuid": "^8.1.0",
-    "ziti-sdk-nodejs": "0.1.35"
+    "ziti-sdk-nodejs": "0.1.36"
   }
 }
